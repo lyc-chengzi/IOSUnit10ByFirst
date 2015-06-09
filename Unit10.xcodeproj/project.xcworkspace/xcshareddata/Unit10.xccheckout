@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>40DA852F-EFE9-483F-B483-2398A9A62412</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Unit10</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>162D7E790FE9162DFC682CB9A5C1F0E83DA5657B</key>
+		<string>https://github.com/lyc-chengzi/IOSUnit10ByFirst.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Unit10.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>162D7E790FE9162DFC682CB9A5C1F0E83DA5657B</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/lyc-chengzi/IOSUnit10ByFirst.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>162D7E790FE9162DFC682CB9A5C1F0E83DA5657B</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>162D7E790FE9162DFC682CB9A5C1F0E83DA5657B</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Unit10</string>
+		</dict>
+	</array>
+</dict>
+</plist>
