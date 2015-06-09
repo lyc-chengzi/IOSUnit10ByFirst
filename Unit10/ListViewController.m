@@ -8,7 +8,7 @@
 
 #import "ListViewController.h"
 
-@interface ListViewController ()
+@interface ListViewController ()<UISearchBarDelegate>
 
 @end
 
@@ -19,8 +19,26 @@
     // Do any additional setup after loading the view.
     UIBarButtonItem *backBtn = [[UIBarButtonItem alloc] initWithTitle:@"" style:UIBarButtonItemStylePlain target:self action:nil];
     self.navigationItem.backBarButtonItem = backBtn;
+    UISearchBar * theSearchBar = [[UISearchBar alloc] init];
+    
+    theSearchBar.placeholder = @"enter province name";
+    
+    theSearchBar.autocorrectionType = UITextAutocorrectionTypeNo;
+    
+    theSearchBar.autocapitalizationType = UITextAutocapitalizationTypeAllCharacters;
+    
+    theSearchBar.scopeButtonTitles = [NSArray arrayWithObjects:@"All",@"A",@"B",@"C",@"D" ,nil];
+    
+    theSearchBar.showsScopeBar = YES;
+    
+    theSearchBar.keyboardType = UIKeyboardTypeNamePhonePad;
+    
+    theSearchBar.showsBookmarkButton = YES;
     
     
+    
+    self.tableView.tableHeaderView = theSearchBar;  //将searchBar添加到tableView的头,注意滚动出屏幕后，搜索框也不在了，只出现在首页
+    NSLog(@"self.tableView.tableHeaderView:%@",self.tableView.tableHeaderView);
 }
 
 - (void)didReceiveMemoryWarning {
@@ -52,5 +70,17 @@
      */
 }
 
+-(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
+{
+    return 10;
+}
+
+-(CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section
+{
+    if (section == 2) {
+        return 20;
+    }
+    return 1;
+}
 
 @end
